@@ -1,57 +1,56 @@
-// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
-// Jad home page: http://www.kpdus.com/jad.html
-// Decompiler options: packimports(3) 
-// Source File Name:   Main.java
-
-import java.io.PrintStream;
 import org.jacoco.agent.rt.internal_28bab1d.Offline;
+
+// 
+// Decompiled by Procyon v0.5.36
+// 
 
 public class Main
 {
-
-    public Main()
-    {
-        boolean aflag[] = $jacocoInit();
-        super();
-        aflag[0] = true;
+    private static transient /* synthetic */ boolean[] $jacocoData;
+    
+    public Main() {
+        final boolean[] $jacocoInit = $jacocoInit();
+        $jacocoInit[0] = true;
     }
-
-    public static void main(String args[])
-    {
-        boolean aflag[] = $jacocoInit();
-        Object obj = null;
-        aflag[1] = true;
-        System.out.println(obj);
-        aflag[2] = true;
-        obj = new Object();
-        aflag[3] = true;
-        System.out.println(obj);
-        System.out.println(obj);
+    
+    public static void main(final String[] array) {
+        final boolean[] $jacocoInit = $jacocoInit();
+        final Object x = null;
+        $jacocoInit[1] = true;
+        System.out.println(x);
+        $jacocoInit[2] = true;
+        final Object x2 = new Object();
+        $jacocoInit[3] = true;
+        System.out.println(x2);
+        System.out.println(x2);
         int i = 0;
-        aflag[4] = true;
-        do
-        {
-            if(i >= 10)
-            {
-                aflag[5] = true;
-                break;
-            }
-            i++;
-            aflag[6] = true;
-        } while(true);
-        while(args.length > 1) 
-        {
-            aflag[7] = true;
-            System.out.println(obj);
-            aflag[8] = true;
+        $jacocoInit[4] = true;
+        while (i < 10) {
+            ++i;
+            $jacocoInit[6] = true;
         }
-        aflag[9] = true;
+        $jacocoInit[5] = true;
+        while (array.length > 1) {
+            $jacocoInit[7] = true;
+            System.out.println(x2);
+            $jacocoInit[8] = true;
+        }
+        if (array.length > 0) {
+            $jacocoInit[9] = true;
+        }
+        else {
+            $jacocoInit[10] = true;
+        }
+        $jacocoInit[11] = true;
+        System.out.println("");
+        $jacocoInit[12] = true;
     }
-
-    private static boolean[] $jacocoInit()
-    {
-        return $jacocoData == null && ($jacocoData = Offline.getProbes(0x71ab4230afb332beL, "Main", 10)) == null ? $jacocoData : $jacocoData;
+    
+    private static /* synthetic */ boolean[] $jacocoInit() {
+        boolean[] $jacocoData;
+        if (($jacocoData = Main.$jacocoData) == null) {
+            $jacocoData = (Main.$jacocoData = Offline.getProbes(5532109654634685188L, "Main", 13));
+        }
+        return $jacocoData;
     }
-
-    private static transient boolean $jacocoData[];
 }

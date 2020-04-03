@@ -1,26 +1,19 @@
-// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
-// Jad home page: http://www.kpdus.com/jad.html
-// Decompiler options: packimports(3) 
-// Source File Name:   Main.java
-
-import java.io.PrintStream;
+// 
+// Decompiled by Procyon v0.5.36
+// 
 
 public class Main
 {
-
-    public Main()
-    {
-    }
-
-    public static void main(String args[])
-    {
-        Object obj = null;
-        System.out.println(obj);
-        obj = new Object();
-        System.out.println(obj);
-        System.out.println(obj);
-        for(int i = 0; i < 10; i++);
-        while(args.length > 1) 
-            System.out.println(obj);
+    public static void main(final String[] array) {
+        System.out.println((Object)null);
+        final Object x = new Object();
+        System.out.println(x);
+        System.out.println(x);
+        for (int i = 0; i < 10; ++i) {}
+        while (array.length > 1) {
+            System.out.println(x);
+        }
+        final int n = (array.length > 0) ? 99 : 999;
+        System.out.println("");
     }
 }

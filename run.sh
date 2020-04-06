@@ -4,9 +4,9 @@ function init() {
   mkdir -p bin
   mkdir -p tmp
 
-  # retrieve jad.exe
-  wget -O tmp/jad-1.5.8g.zip http://www.javadecompilers.com/jad/Jad%201.5.8g%20for%20Windows%209x-NT-2000%20on%20Intel%20platform.zip
-  unzip tmp/jad-1.5.8g.zip -d bin/jad-1.5.8g
+  # jad
+  #wget -O tmp/jad-1.5.8g.zip http://www.javadecompilers.com/jad/Jad%201.5.8g%20for%20Windows%209x-NT-2000%20on%20Intel%20platform.zip
+  #unzip tmp/jad-1.5.8g.zip -d bin/jad-1.5.8g
 
   # procyon
   wget -O bin/procyon-decompiler-0.5.36.jar https://bitbucket.org/mstrobel/procyon/downloads/procyon-decompiler-0.5.36.jar
